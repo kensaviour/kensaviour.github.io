@@ -1,0 +1,38 @@
+/**
+ * You can use these classes to hide parts
+ * of the countdown that you don't need.
+ */
+
+.countDays{ display:none !important; }
+.countDiv0{ display:none !important; }
+.countHours{ display:none !important; }
+.countDiv1{ display:none !important; }
+.countMinutes{ display:none !important; }
+.countDiv2{ display:none !important; }
+.countSeconds{ display:none !important; }
+
+
+.countDiv{
+	display:inline-block;
+	width:16px;
+	height:1.6em;
+	position:relative;
+}
+
+.countDiv:before,
+.countDiv:after{
+	position:absolute;
+	width:5px;
+	height:5px;
+	background-color:#444;
+	border-radius:50%;
+	left:50%;
+	margin-left:-3px;
+	top:0.5em;
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
+	content:'';
+}
+
+.countDiv:after{
+	top:0.9em;
+}
